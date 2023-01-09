@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Mason Chronicles';
+    src: url('../fonts/MasonChronicles.woff2') format('woff2'),
+        url('../fonts/MasonChronicles.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    background-color: #141218;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    min-height: 100vh; /* при позиционировании футера */
+    display: flex; /* при позиционировании футера */
+    flex-direction: column; /* при позиционировании футера */
+    justify-content: space-between; /* при позиционировании футера */
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 90px;
+}
+
+.menu_list{
+    margin-right: auto;
+    margin-left: 67px;
+}
+
+.menu_link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.social_link{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.genre{
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    display: block;
+    animation-delay: 0.1s;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    animation-delay: 0.3s;
+}
+
+.rating_number{
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 9px;
+}
+
+.main_title{
+    font-size: 76px;
+    line-height: 89px;
+    font-family: 'Mason Chronicles';
+    margin-bottom: 10px;
+    animation-delay: 0.5s;
+}
+
+.main_discription{
+    max-width: 458px;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 40px;
+    animation-delay: 0.7s;
+}
+
+.button{
+    display: inline-block;
+    background: #9D2929;
+    border-radius: 8px;
+    color:#FFF;
+    border: none;
+    padding: 22px 72px; 
+    text-decoration: none; 
+    animation-delay: 0.9s;
+}
+
+.button:active{
+    color: #FFF;
+}
+
+.main_content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+
+.play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9D2929;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+.play_img {
+    position: relative;
+    transform: translateX(5px);
+}
+.play:before{
+    content: '';
+    width: 132px;
+    height: 132px;
+    background: #9D2929;
+    opacity: 0.5;
+    position: absolute;
+    border-radius: 50%;
+    left: -16px;
+    top: -16px;
+    animation: pulse 1s  1.5s infinite;
+}
+
+
+/* slider  */
+.series{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+    max-width: 420px;
+}
+.card{
+    width: 164px;
+    height: 113px;
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 13px;
+    margin-right: 30px;
+}
+
+.card_subtitle{
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 2px;
+}
+
+.card_title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+.series_1{
+    background-image: url(../img/series1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.series_2{
+    background-image: url(../img/series2.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+}
+.series_3 {
+    background-image: url(../img/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.series_4 {
+    background-image: url(../img/series4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.series_5 {
+    background-image: url(../img/series5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.series_6 {
+    background-image: url(../img/series6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.series_7 {
+    background-image: url(../img/series7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.series_8 {
+    background-image: url(../img/series8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper{
+    max-width: 420px;
+    margin-left: 0;
+}
+
+.arrow{
+    width: 32px;
+    height: 23px;
+    border: none;
+    background-image: url(../img/navigation.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: -37px;
+}
+
+
+
+.footer{
+    background: #141218;
+    padding: 20px 0;
+    margin-top: auto; /* при позиционировании футера */
+}
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_link{
+    margin-left: 25px;
+    text-decoration: none;
+    color: #3a383d;
+}
+.copyright{
+    color:#3a383d;
+}
+
+.menu_button{  /* гамбургер по умолчанию отключен */
+    display: none;
+}
+
+
+
+
+/* responsev-адаптация под устройства  */
+@media(max-width: 760px){
+   .play{
+       display: none;
+   }
+
+   .footer_content{
+       flex-direction: column;
+       align-items:flex-start;
+   }
+
+   .copyright{
+       display: block;
+       margin-bottom: 8px;
+   }
+
+   .footer_link:first-child{
+       margin-left: 0;
+   }
+}
+
+
+
+@media(max-width: 540px) {
+    .menu_button{       /* делаем гамбургер 1я палка */
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        width: 30px;
+        height: 2px;
+        border: none;
+        background-color:#FFF;
+    }
+
+    .menu_button:before {  /* делаем гамбургер 2я палка */
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 30px;
+        height: 2px;
+        margin-top: -7px;
+        background-color: #FFF;
+        transition: transform 0.2s;
+        }
+
+    .menu_button:after {    /* делаем гамбургер 3я палка */
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 30px;
+        height: 2px;
+        margin-top: 7px;
+        background-color: #FFF;
+        transition: transform 0.2s;
+    }
+
+
+    .menu_button_active{   /* делаем крестик из гамбургера */
+        height: 0;
+    }
+
+        .menu_button_active:before{
+            transform: rotate(45deg);
+            margin-top: 0;
+        }
+        .menu_button_active:after {
+            transform: rotate(-45deg);
+            margin-top: 0;
+        }
+
+
+
+    .header{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #9D2929;
+        width: 250px;
+        padding-bottom: 40px;
+    }
+
+    .header_active{   /* активация бургера*/
+        display: flex;
+    }
+
+    .logo{
+        margin-bottom: 25px;
+    }
+
+    .menu_list{
+        margin: auto;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_link{
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+
+    .social{
+        order: 1;
+        margin-bottom: 22px;
+    }
+
+    .social_link:first-child{
+        margin-left: 0;
+    }
+
+    .main_content{
+        margin-top: 196px;
+    }
+
+    .main_title{
+        font-size: 56px;
+    }
+
+}
